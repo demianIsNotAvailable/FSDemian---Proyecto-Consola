@@ -1,0 +1,189 @@
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2em;
+    padding: 0;
+}
+
+/*  <CONSOLA>*/
+#body0 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 48em;
+    width: 48em;
+
+    background-color: rgb(104, 55, 119);
+}
+/*  </CONSOLA>
+
+    <MITAD SUPERIOR> */
+#body1 {
+
+    display: flex;
+    flex-direction: row;
+
+    height: 22em;
+    width: 47.4em;
+
+    border-style: solid;
+    border-bottom-style: hidden;
+    border-width: 0.3em;
+    border-color: rgb(22, 22, 22);
+
+    background-color: yellowgreen;
+}
+/*  </MITAD SUPERIOR>
+
+
+    VISAGRA */
+#body2 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    height: 4em;
+    width: 48em;
+
+    background-color: yellow
+}
+
+#b2left {
+
+    display: flex;
+
+    height: 4em;
+    width: 6em;
+
+    border-left-style: solid;
+    border-left-width: 0.1em;
+    border-left-color: rgba(39, 37, 37);
+   
+
+    background-color: green;
+}
+
+#b2left1 {
+
+    display: flex;
+    height: 4em;
+    width: 2em;
+
+    margin-left: -1em;
+
+    border-left-style: solid;
+    border-left-width: 0.1em;
+    border-left-color: rgb(22, 22, 22);
+    border-radius: 50% 0% 0% 50%;
+
+    background-color: rgb(39, 37, 37);
+}
+
+#b2center {
+
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+
+    height: 3em;
+    width: 36em;
+
+    border-style: solid;
+    border-width: 0.3em;
+    border-left-width: 0.2em;
+    border-right-width: 0.2em;
+    border-color:rgb(22, 22, 22);
+    border-left-color: black;
+    border-right-color: black;
+    border-radius: 1%;
+
+    background-color: rgba(39, 37, 37);
+}
+
+#mic0 {
+
+    height: 1.5em;
+    width: 2.5em;
+
+}
+
+#micro {
+
+    height: 1.5em;
+    width: 0.5em;
+
+    background-color: black;
+}
+
+#mic {
+
+    display: flex;
+    justify-content: flex-end;
+
+    height: 1.25em;
+    width: 2.5em;
+
+    color: rgba(78, 77, 77, 0.493);
+    background-color: rgb(39, 37, 37);
+
+
+}
+
+#b2right {
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    height: 4em;
+    width: 6em;
+
+    border-left-style: solid;
+    border-left-width: 0.1em;
+    border-left-color: rgb(39, 37, 37);
+   
+
+    background-color: rgb(39, 37, 37);
+}
+
+#b2right2 {
+
+    display: flex;
+    height: 4em;
+    width: 2em;
+
+    margin-right: -1em;
+
+    border-right-style: solid;
+    border-right-width: 0.1em;
+    border-right-color: rgb(22, 22, 22);
+    border-radius: 0 50% 50% 0;
+
+    background-color: rgb(39, 37, 37);
+}
+/*  </VISAGRA>
+
+    <MITAD INFERIOR>*/
+#body3 {
+
+    display: flex;
+    flex-direction: row;
+
+    height: 22em;
+    width: 47.4em;
+
+    border-style: solid;
+    border-top-style: hidden;
+    border-width: 0.3em;
+    border-color: rgb(22, 22, 22);
+
+    background-color:  rgba(39, 37, 37, 0.151);
+}
