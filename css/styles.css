@@ -29,7 +29,6 @@ body {
     height: 22em;
     width: 47.4em;
 
-    background-color:transparent;
 
 }
 
@@ -42,8 +41,6 @@ body {
 
     height: 100%;
     width: 8em;
-
-    background-color: transparent;
 
 }
 
@@ -92,7 +89,6 @@ body {
 
     margin-right: -1em;
 
-    background-color:rgb(39, 37, 37);
 }
 
 .speaker1 {
@@ -104,7 +100,6 @@ body {
     height: 2em;
     width: 4em;
 
-    background-color: rgb(39, 37, 37)
 }
 
 .speakerHole {
@@ -241,8 +236,6 @@ body {
     width: 4em;
 
     margin-left: -2em;
-
-    background-color:brown;
 }
 
 #b1right3 {
@@ -278,12 +271,21 @@ body {
     height: 1em;
     width: 1em;
 
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
     border-radius: 5% 5% 5% 5%;
 
     background-color: rgb(45,45,45);
+}
+
+#squareLeft {
+
+    margin-right: -4.75em;
+}
+#squareRight {
+
+    margin-left: -4.75em
 }
 
 /* Hinge (body2) starts here. */
@@ -297,7 +299,6 @@ body {
     height: 4em;
     width: 47.4em;
 
-    background-color: transparent;
 }
 
 #b2left {
@@ -369,7 +370,7 @@ body {
 #b2center {
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     height: 3.7em;
@@ -387,7 +388,7 @@ body {
     
 
     background: rgb(39,37,37);
-    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(20,20,20,1) 100%);
+    background: linear-gradient(rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(20,20,20,1) 100%);
 }
 
 #b2center2{
@@ -418,12 +419,12 @@ body {
     justify-content: flex-end;
     align-items: center;
 
-    height: 3.6em;
+    height: 3.65em;
     width: 2.5em;
 
     color: rgba(50, 50, 50, 0.75);
     background: rgb(39,37,37);
-    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(20,20,20,1)100%);
+    background: linear-gradient(rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(20,20,20,1) 100%);
 
 }
 
@@ -500,6 +501,11 @@ body {
     background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(78,74,74,1) 100%); 
 }
 
+#b2right1:hover > .luz {
+
+    Background: rgb(72, 172, 15);
+}
+
 /* Lower half (body3) starts here */
 
 #body3 {
@@ -509,7 +515,6 @@ body {
     height: 22em;
     width: 47.4em;
 
-    background-color:  rgba(39, 37, 37, 0.51);
 }
 
 /* Lower left starts here. Includes directional buttons (arrows)*/
@@ -528,7 +533,7 @@ body {
     display: flex;
 
     height: 6.5em;
-    width: 7.75em;
+    width: 8em;
 
     border-left-style: solid;
     border-left-width: 0.3em;
@@ -545,7 +550,7 @@ body {
     align-items: center;
 
     height: 6.5em;
-    width: 7.75em;
+    width: 8em;
 
     border-left-style: solid;
     border-left-width: 0.3em;
@@ -564,7 +569,6 @@ body {
     height: 6em;
     width: 6em;
 
-    background-color: red;
 }
 
 #arrows1 {
@@ -581,7 +585,6 @@ body {
 #arrowUp {
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -591,6 +594,8 @@ body {
     border-style: solid;
     border-width: 0.2em 0.2em 0 0.2em;
     border-color: black;
+
+    background-color: rgb(25, 25, 25)
 }
 
 #arrowUpLine {
@@ -604,7 +609,6 @@ body {
 #arrows2 {
 
     display: flex;
-    direction: row;
     justify-content: center;
     align-items: center;
 
@@ -617,7 +621,6 @@ body {
 #arrowLeft {
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -628,7 +631,7 @@ body {
     border-width: 0.2em 0em 0.2em 0.2em;
     border-color: black;
 
-    background-color: rgb(39, 37, 37)
+    background-color: rgb(25, 25, 25)
 
 }
 
@@ -645,15 +648,14 @@ body {
     height: 2em;
     width: 2em;
  
-    background: radial-gradient(circle, rgba(60,56,56,1) 0%, rgba(39,37,37,1) 75%);
+    background: radial-gradient(circle, rgba(39,37,37,1) 0%, rgba(25,25,25,1) 75%);
 
-    background-color: rgb(39, 37, 37)
+    background-color: rgb(25, 25, 25)
 }
 
 #arrowRight {
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -664,7 +666,7 @@ body {
     border-width: 0.2em 0.2em 0.2em 0em;
     border-color: black;
 
-    background-color:rgb(39, 37, 37)
+    background-color:rgb(25, 25, 25)
 
 }
 
@@ -679,7 +681,6 @@ body {
 #arrows3 {
 
     display: flex;
-    direction: row;
     justify-content: center;
 
     height: 2em;
@@ -691,7 +692,6 @@ body {
 #arrowDown {
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -701,6 +701,8 @@ body {
     border-style: solid;
     border-width: 0em 0.2em 0.2em 0.2em;
     border-color: black;
+
+    background-color: rgb(25, 25, 25)
 }
 
 #arrowDownLine {
@@ -714,7 +716,7 @@ body {
 #b3left3 {
 
     height: 9em;
-    width: 7.75em;
+    width: 8em;
 
     border-left-style: solid;
     border-bottom-style: solid;
@@ -725,7 +727,7 @@ body {
     background-color:rgb(39, 37, 37);
 }
 
-/* Lower center part starts here (bottom screen) */
+/* Lower center part is here */
 
 #b3center {
 
@@ -741,4 +743,296 @@ body {
     border-bottom-color:rgb(39, 37, 37);
 
     background-color: rgb(39, 37, 37);
+}
+
+/*Lower right here. buttons pad + SEL + START (interactive) */
+
+#b3right {
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 8.5em;
+
+}
+
+#b3right1 {
+
+    height: 5em;
+    width: 8.2em;
+    
+    border-right-style: solid;
+    border-right-width: 0.3em;
+    border-color: rgb(22, 22, 22);
+    
+    background-color:rgb(39, 37, 37)
+}
+
+#b3right2 {
+
+    display: flex;
+    justify-content: flex-start;
+
+
+    height: 8em;
+    width: 8.2em;
+
+    border-right-style: solid;
+    border-right-width: 0.3em;
+    border-color: rgb(22, 22, 22);
+    
+    background-color:rgb(39, 37, 37)
+}
+
+#buttons {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 6.9em;
+    width: 6.9em;
+}
+
+#buttons1 {
+
+    display: flex;
+    justify-content: center;
+
+    height: 2.3em;
+    width: 6.9em;
+
+}
+
+#buttonX {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 1.8em;
+    width: 1.8em;
+
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: black;
+    border-radius: 50%;
+
+    background-color: rgb(25, 25, 25)
+}
+
+#X {
+    font-family: sans-serif;
+    font-size:large;
+    color: white;
+
+    background-color: rgb(25, 25, 25);
+}
+
+#buttons2 {
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+ 
+    height: 2.3em;
+    width: 6.9em;
+
+}
+
+#buttonY {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 1.8em;
+    width: 1.8em;
+
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: black;
+    border-radius: 50%;
+
+    background-color: rgb(25, 25, 25)
+
+}
+
+#Y {
+    font-family: sans-serif;
+    font-size:large;
+    color: white;
+
+    background-color: rgb(25, 25, 25);
+}
+
+#buttonsCenter {
+
+    height: 2em;
+    width: 2em;
+}
+
+#buttonA {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 1.8em;
+    width: 1.8em;
+
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: black;
+    border-radius: 50%;
+
+    background-color: rgb(25, 25, 25)
+
+}
+
+#A {
+    font-family: sans-serif;
+    font-size:large;
+    color: white;
+
+    background-color: rgb(25, 25, 25);
+}
+
+#buttons3 {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 2.3em;
+    width: 6.9em;
+
+}
+
+#buttonB {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 1.8em;
+    width: 1.8em;
+
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: black;
+    border-radius: 50%;
+
+    background-color: rgb(25, 25, 25)
+}
+
+#B {
+    font-family: sans-serif;
+    font-size:large;
+    color: white;
+
+    background-color: rgb(25, 25, 25);
+}
+
+#b3right3 {
+
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+
+    height: 9em;
+    width: 8.2em;
+
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-width: 0.3em;
+    border-bottom-width: 0.3em;
+    border-color: rgb(22, 22, 22);
+    border-radius: 0 0 15% 0;
+
+    background-color:rgb(39, 37, 37)
+
+}
+
+#b3r3top {
+
+    height: 3em;
+    width: 2em;
+}
+
+#b3r3bottom {
+    display: flex;
+    flex-direction: column;
+
+    height: 3em;
+    width: 6em;
+
+    margin-left: -1em;
+}
+
+#startBox {
+
+    display: flex;
+    justify-content: flex-start;
+
+    height: 1.5em;
+    width: 6em;
+}
+
+#buttonStart {
+
+    height: 0.75em;
+    width: 0.75em;
+
+    border-style: solid;
+    border-width: 0.15em;
+    border-color: black;
+    border-radius: 50%;
+
+    background-color: rgb(39, 37, 37) 
+}
+
+#Start {
+
+    margin-left: 0.2em;
+    margin-top: 0.4em;
+
+    font-family: sans-serif;
+    font-size: x-small;
+    font-weight: bold;
+    color: white
+}
+
+#selectBox {
+
+    display: flex;
+    justify-content: flex-start;
+
+    height: 1.5em;
+    width: 6em;
+}
+
+#buttonSelect {
+
+    height: 0.75em;
+    width: 0.75em;
+
+    border-style: solid;
+    border-width: 0.15em;
+    border-color: black;
+    border-radius: 50%;
+
+    background-color: rgb(39, 37, 37) 
+}
+
+#Select {
+
+    margin-left: 0.2em;
+    margin-top: 0.4em;
+
+    font-family: sans-serif;
+    font-size: xx-small;
+    font-weight: bold;
+    color: white
 }
