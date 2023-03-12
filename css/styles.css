@@ -5,35 +5,35 @@ body {
     justify-content: center;
     align-items: center;
 
-    padding: 5em;
+    border: 0;
+    margin-top: 5em;
 }
 
-/*  <CONSOLA>*/
+/* Main body, consists of upper half (body1), hinge (body2) and lower half (body3) */
+
 #body0 {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+   
     height: 48em;
     width: 48em;
-
-    background-color: transparent;
 }
-/*  </CONSOLA>
 
-    <MITAD SUPERIOR> */
+/* Upper half (body1) starts here. Made up of 3 main parts (Left, Center, Right), each divided into numbered sections, top-to-bottom and left-to-right as applicable. */
+
 #body1 {
 
     display: flex;
-    flex-direction: row;
-
+    
     height: 22em;
     width: 47.4em;
 
-    background-color: transparent;
+    background-color:transparent;
+
 }
+
+ /* Upper Left starts here */
 
 #b1left {
 
@@ -42,6 +42,8 @@ body {
 
     height: 100%;
     width: 8em;
+
+    background-color: transparent;
 
 }
 
@@ -127,7 +129,7 @@ body {
     border-left-style: solid;
     border-width: 0.3em;
     border-color: rgb(22, 22, 22);
-    border-radius: 0% 0% 0% 6%;
+    border-radius: 0% 0% 0% 10%;
 
     background-color: rgb(39, 37, 37);
 }
@@ -135,12 +137,14 @@ body {
 #gapLeft {
 
     height: 0.2em;
-    width: 5.7em;
+    width: 6em;
 
-    margin-left: -0.3em;
+    margin-left: -0.25em;
 
     background-color: white;
 }
+
+/* Upper Center starts here */
 
 #b1center {
 
@@ -149,7 +153,7 @@ body {
     align-items: center;
 
     height: 21.7em;
-    width: 40em;
+    width: 31em;
 
     border-top-style: solid;
     border-top-width: 0.3em;
@@ -184,6 +188,8 @@ body {
     opacity: 0.05;
     transition-duration: 2s;
 }
+
+/* Upper Right starts here. */
 
 #b1right {
 
@@ -259,7 +265,7 @@ body {
 #gapRight {    
 
     height: 0.2em;
-    width: 5.7em;
+    width: 6em;
  
     margin-right: -0.3em;
     
@@ -279,10 +285,9 @@ body {
 
     background-color: rgb(45,45,45);
 }
-/*  </MITAD SUPERIOR>
 
-
-    VISAGRA */
+/* Hinge (body2) starts here. */
+    
 #body2 {
 
     display: flex;
@@ -290,7 +295,7 @@ body {
     align-items: center;
     
     height: 4em;
-    width: 48em;
+    width: 47.4em;
 
     background-color: transparent;
 }
@@ -301,33 +306,64 @@ body {
 
     height: 4em;
     width: 6em;
-
-    border-left-style: solid;
-    border-left-width: 0.1em;
-    border-left-color: rgba(39, 37, 37);
-    border-radius: 0% 3% 0% 0%;
-   
-
-    background: rgb(39,37,37);
-    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(39,37,37,1) 100%);
+  
 }
 
 #b2left1 {
 
     display: flex;
+    flex-direction: column;
     height: 4em;
     width: 2em;
 
-    margin-left: -1em;
+    
+}
+
+#b2L1top {
+
+    height: 2em;
+    width: 2em;
+
+    border-radius: 100% 0 0 0;
+    background: linear-gradient(rgba(39,37,37,1) 0%, rgba(78,74,74,1) 100%);
+}
+
+#b2L1bottom {
+
+    height: 2em;
+    width: 2em;
 
     border-left-style: solid;
-    border-bottom-style: solid;
-    border-left-width: 0.1em;
+    border-left-width: 0.15em;
     border-left-color: rgb(22, 22, 22);
-    border-radius: 50% 0% 0% 50%;
 
-    background: rgb(39,37,37);
-    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(39,37,37,1) 100%);
+    background-color: rgb(39, 37, 37);
+}
+
+#b2L1bottomRound {
+
+    height: 2em;
+    width: 2em;
+
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em;
+    border-color: black;
+    border-radius: 0 0 0 100%;
+
+    background: linear-gradient(rgba(78,74,74,1) 0%, rgba(20,20,20,1) 100%);
+}
+
+
+#b2left2 {
+
+    height: 4em;
+    width: 4em;
+
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em;
+    border-color: black;
+
+    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(20,20,20,1) 100%);
 }
 
 #b2center {
@@ -336,23 +372,23 @@ body {
     flex-direction: column;
     align-items: center;
 
-    height: 3.5em;
-    width: 36em;
+    height: 3.7em;
+    width: 38em;
 
     border-style: solid;
-    border-width: 0.3em;
+    border-width: 0.2em;
     border-left-width: 0.2em;
     border-right-width: 0.2em;
-    border-color:rgb(30, 30, 30);
+    border-bottom-width: 0.2em;
+    
     border-left-color: black;
     border-right-color: black;
-    border-radius: 1%;
+    border-bottom-color: rgb(22, 22, 22);
+    
 
     background: rgb(39,37,37);
-    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(39,37,37,1) 100%);
+    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(20,20,20,1) 100%);
 }
-
-
 
 #b2center2{
 
@@ -361,7 +397,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-#mic0 {
+#micLeft {
 
     height: 1.5em;
     width: 2.5em;
@@ -376,38 +412,80 @@ body {
     background-color: black;
 }
 
-#mic {
+#micRight {
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
-    height: 3.5em;
+    height: 3.6em;
     width: 2.5em;
 
     color: rgba(50, 50, 50, 0.75);
     background: rgb(39,37,37);
-    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(39,37,37,1) 100%);
-
+    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(20,20,20,1)100%);
 
 }
 
 #b2right {
 
     display: flex;
-    flex-direction: row-reverse;
 
     height: 4em;
     width: 6em;
 
     border-left-style: solid;
     border-left-width: 0.1em;
-    border-left-color: rgb(39, 37, 37);
-    border-radius: 3% 0% 0% 0%;
-   
+    border-left-color: rgb(39, 37, 37); 
 
-    background: rgb(39,37,37);
-    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(39,37,37,1) 100%);
+}
+
+#b2right1 {
+
+    display:flex;
+    justify-content: flex-end;
+
+    height: 4em;
+    width: 4em;
+
+    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(20,20,20,1) 100%);
+}
+
+#b2right2 {
+
+    display: flex;
+    flex-direction: column;
+    height: 4em;
+    width: 2em;
+    
+}
+
+#b2R2top {
+
+    height: 2em;
+    width: 2em;
+
+    border-radius: 0 100% 0 0;
+    background: linear-gradient(rgba(39,37,37,1) 0%, rgba(78,74,74,1) 100%);
+}
+
+#b2R2bottom {
+
+    height: 2em;
+    width: 2em;
+
+    background-color: rgb(39, 37, 37);
+}
+
+#b2R2bottomRound {
+
+    height: 2em;
+    width: 2em;
+
+
+    border-radius: 0 0 100% 0;
+
+    background: linear-gradient(rgba(78,74,74,1) 0%, rgba(20,20,20,1) 100%);
 }
 
 .luz {
@@ -422,50 +500,27 @@ body {
     background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(78,74,74,1) 100%); 
 }
 
-#b2right2 {
+/* Lower half (body3) starts here */
 
-    display: flex;
-    height: 4em;
-    width: 2em;
-
-    margin-right: -1em;
-
-    border-right-style: solid;
-    border-right-width: 0.1em;
-    border-right-color: rgb(22, 22, 22);
-    border-radius: 0 50% 50% 0;
-
-    background: rgb(39,37,37);
-    background: linear-gradient(180deg, rgba(39,37,37,1) 0%, rgba(78,74,74,1) 50%, rgba(39,37,37,1) 100%);
-}
-/*  </VISAGRA>
-
-    <MITAD INFERIOR>*/
 #body3 {
 
     display: flex;
-    flex-direction: row;
-
+  
     height: 22em;
     width: 47.4em;
-
-    border-style: solid;
-    border-top-style: hidden;
-    border-width: 0.3em;
-    border-color: rgb(22, 22, 22);
 
     background-color:  rgba(39, 37, 37, 0.51);
 }
 
-#body3left {
+/* Lower left starts here. Includes directional buttons (arrows)*/
+
+#b3left {
 
     display: flex;
     flex-direction: column;
 
     height: 100%;
     width: 8em;
-
-    background-color:aquamarine
 }
 
 #b3left1 {
@@ -473,7 +528,11 @@ body {
     display: flex;
 
     height: 6.5em;
-    width: 8em;
+    width: 7.75em;
+
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    border-color: rgb(22, 22, 22);
 
     background-color: rgb(39, 37, 37)
 }
@@ -486,7 +545,12 @@ body {
     align-items: center;
 
     height: 6.5em;
-    width: 8em;
+    width: 7.75em;
+
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    border-color: rgb(22, 22, 22);
+
 
     background-color: rgb(39, 37, 37);
 }
@@ -506,7 +570,6 @@ body {
 #arrows1 {
 
     display: flex;
-    direction: row;
     justify-content: center;
 
     height: 2em;
@@ -543,6 +606,7 @@ body {
     display: flex;
     direction: row;
     justify-content: center;
+    align-items: center;
 
     height: 2em;
     width: 6em;
@@ -580,6 +644,8 @@ body {
 
     height: 2em;
     width: 2em;
+ 
+    background: radial-gradient(circle, rgba(60,56,56,1) 0%, rgba(39,37,37,1) 75%);
 
     background-color: rgb(39, 37, 37)
 }
@@ -643,4 +709,36 @@ body {
     width: 0.2em;
 
     background-color: white;
+}
+
+#b3left3 {
+
+    height: 9em;
+    width: 7.75em;
+
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-width: 0.3em;
+    border-bottom-width: 0.3em;
+    border-color: rgb(22, 22, 22);
+    border-radius: 0 0 0 15%;
+    background-color:rgb(39, 37, 37);
+}
+
+/* Lower center part starts here (bottom screen) */
+
+#b3center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 21.75em;
+    width: 31em;
+
+    border-bottom-style: solid;
+    border-bottom-width: 0.3em;
+    border-bottom-color:rgb(39, 37, 37);
+
+    background-color: rgb(39, 37, 37);
 }
